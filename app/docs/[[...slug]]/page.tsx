@@ -47,7 +47,7 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   const page = source.getPage(params.slug)
 
   if (!page) notFound()
-  const { body: Mdx, toc, lastModified } = await page.data
+  const { body: Mdx, toc, lastModified } = await page.data.load()
 
   return (
     <PageRoot

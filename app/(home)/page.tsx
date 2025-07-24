@@ -1,3 +1,4 @@
+import { PreviewImages } from './page.client'
 export const metadata = {
   title: '木木笔记',
 }
@@ -38,6 +39,8 @@ export default function HomePage() {
                 我的博客
               </a>
             </div>
+
+            <PreviewImages />
           </div>
         </div>
       </div>

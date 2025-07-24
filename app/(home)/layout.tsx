@@ -3,7 +3,7 @@ import Preview from '@/public/banner.png'
 import Link from 'fumadocs-core/link'
 import { HomeLayout } from 'fumadocs-ui/layouts/home'
 import { NavbarMenu, NavbarMenuContent, NavbarMenuLink, NavbarMenuTrigger } from 'fumadocs-ui/layouts/home/navbar'
-import { Book, ComponentIcon, Pencil, PlusIcon, Server } from 'lucide-react'
+import { ComponentIcon, Pencil, PlusIcon, Server } from 'lucide-react'
 import Image from 'next/image'
 import type { ReactNode } from 'react'
 
@@ -18,32 +18,15 @@ export default function Layout({ children }: { children: ReactNode }) {
       }
       links={[
         {
-          type: 'menu',
-          on: 'menu',
-          text: 'Documentation',
-          items: [
-            {
-              text: 'Getting Started',
-              url: '/docs/ui',
-              icon: <Book />,
-            },
-            {
-              text: 'Components',
-              url: '/docs/ui/components',
-              icon: <ComponentIcon />,
-            },
-          ],
-        },
-        {
           type: 'custom',
           on: 'nav',
           children: (
             <NavbarMenu>
               <NavbarMenuTrigger>
-                <Link href="/docs/ui">Documentation</Link>
+                <Link href="/docs/somnia/guide">主题文档</Link>
               </NavbarMenuTrigger>
               <NavbarMenuContent className="text-[15px]">
-                <NavbarMenuLink href="/docs/ui" className="md:row-span-2">
+                <NavbarMenuLink href="/docs/somnia/guide" className="md:row-span-2">
                   <div className="-mx-3 -mt-3">
                     <Image
                       src={Preview}
@@ -60,13 +43,13 @@ export default function Layout({ children }: { children: ReactNode }) {
 
                 <NavbarMenuLink href="/docs/ui/components" className="lg:col-start-2">
                   <ComponentIcon className="bg-fd-primary text-fd-primary-foreground p-1 mb-2 rounded-md" />
-                  <p className="font-medium">Components</p>
+                  <p className="font-medium">Somnia主题</p>
                   <p className="text-fd-muted-foreground text-sm">Add interactive experience to your docs.</p>
                 </NavbarMenuLink>
 
                 <NavbarMenuLink href="/docs/ui/openapi" className="lg:col-start-2">
                   <Server className="bg-fd-primary text-fd-primary-foreground p-1 mb-2 rounded-md" />
-                  <p className="font-medium">OpenAPI</p>
+                  <p className="font-medium">THYUU/星度</p>
                   <p className="text-fd-muted-foreground text-sm">Generate interactive playgrounds and docs for your OpenAPI schema.</p>
                 </NavbarMenuLink>
 

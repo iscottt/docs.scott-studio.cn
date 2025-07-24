@@ -1,14 +1,20 @@
 import Logo from '@/public/logo.svg'
 import type { BaseLayoutProps, LinkItemType } from 'fumadocs-ui/layouts/shared'
-import { AlbumIcon } from 'lucide-react'
+import { ExternalLinkIcon } from 'lucide-react'
 import Image from 'next/image'
 
 export const linkItems: LinkItemType[] = [
   {
-    icon: <AlbumIcon />,
-    text: 'Blog',
-    url: '/blog',
-    active: 'nested-url',
+    text: '个人博客',
+    url: 'https://blog.scott-studio.cn',
+  },
+  {
+    text: 'Halo博客',
+    url: 'https://halo.scott-studio.cn',
+  },
+  {
+    text: 'THYUU/星度',
+    url: 'https://scott-studio.cn',
   },
 ]
 /**
@@ -31,10 +37,9 @@ export const baseOptions: BaseLayoutProps = {
   // see https://fumadocs.dev/docs/ui/navigation/links
   links: [
     {
-      text: 'Blog',
-      url: '/blog',
-      // secondary items will be displayed differently on navbar
-      secondary: false,
+      text: '个人博客',
+      url: 'https://blog.scott-studio.cn',
+      icon: <ExternalLinkIcon />,
     },
   ],
 }
