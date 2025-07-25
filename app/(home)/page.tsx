@@ -15,7 +15,7 @@ export default function HomePage() {
         <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">包含主题的使用文档，以及一些其他的内容。</p>
         <div className="inline-flex items-center gap-3 max-md:mx-auto">
           <Link
-            className="inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring disabled:pointer-events-none disabled:opacity-50  text-black dark:text-white shadow-fd-background/20 bg-black hover:bg-gray-800 dark:bg-blue-500 dark:hover:bg-blue-400 h-11 px-6 rounded-full"
+            className="inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring disabled:pointer-events-none disabled:opacity-50  text-white shadow-fd-background/20  bg-blue-500 hover:bg-blue-400 h-11 px-6 rounded-full"
             href="/docs/somnia/guide">
             查看文档
           </Link>
