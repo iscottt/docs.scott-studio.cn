@@ -1,0 +1,80 @@
+---
+# 这一段可以省略，因为默认布局就是doc
+layout: doc
+
+# title定义浏览器标签页上显示的标题
+title: 菜单与链接
+---
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+## 添加菜单
+
+<Steps>
+	<Step>
+	访问 `网站后台/外观/菜单`
+	</Step>
+	<Step>
+	你会看到以下几个菜单
+	- **顶部菜单**：全站顶部导航菜单
+	- **首页顶部图标**：只在首页显示的自定义图标菜单
+	- **底部菜单**：显示在全站底部导航菜单
+	</Step>
+	<Step>
+	从边栏选择想要添加到菜单的文章/页面，或添加自定义链接
+	</Step>
+</Steps>
+
+
+## 添加二级菜单
+
+<Steps>
+	<Step>
+	在边栏的“自定义链接”部分输入“文本”（URL可留空）后，添加到菜单
+	</Step>
+	<Step>
+	将其他菜单使用鼠标拖拽到此链接的下级并调整位置/页面，或添加自定义链接
+	</Step>
+</Steps>
+
+**注： 用于展开子菜单的父级在主题中不可作为链接使用。因此只输入文本即可**
+
+## 使用图标
+
+
+<Steps>
+	<Step>
+	访问 [THYUU/星度主题介绍站](https://theme.thyuu.com/)
+	</Step>
+	<Step>
+	选中 `图标库` 选项卡
+	</Step>
+	<Step>
+	选中图标之后点击图标会自动复制 `thyuu-icon-xxx` 
+	</Step>
+	<Step>
+	将它粘贴到菜单的“文本”位置。图标和文本用`·`分隔例如：`thyuu-icon-crown·菜单文本`
+	</Step>
+	<Step>
+	这样，就会在“菜单文本”的前面显示一个苹果图标了
+	</Step>
+</Steps>
+
+## 一些固定的URL链接
+
+<Callout title="提示">
+主题中有一些固定的URL链接，可以在菜单中添加，也可以在文章中添加
+</Callout>
+
+|  URL   | 位置  |
+|  ----  | ----  |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/</code>  | 首页 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/type/image</code>  | 模板为`图片`的文章 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/type/gallery </code> | 模板为`相册`的文章 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/type/audio</code>  | 模板为`音频`的文章 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/type/video</code>  | 模板为`视频`的文章 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/type/quote</code>  | 模板为`一句话`的文章 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/type/aside</code>  | 模板为`双栏`的文章 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/date/年-月-日</code>  | 根据时间日期去查询文章 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/category/别名</code>  | 按分类查询 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/tag/别名</code>  | 按标签查询 |
+| <code className="rounded-md p-1 bg-fd-primary/10 text-fd-primary">/sitemap.xml</code>  | 站点地图 |

@@ -10,15 +10,6 @@ const config = {
     ignoreDuringBuilds: true,
   },
   serverExternalPackages: ['ts-morph', 'typescript'],
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-        port: '',
-      },
-    ],
-  },
 }
 
 export default withMDX(config)
