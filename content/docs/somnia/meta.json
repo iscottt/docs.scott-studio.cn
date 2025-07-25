@@ -1,0 +1,22 @@
+{
+  "title": "Somnia",
+  "description": "Somnia主题使用文档",
+  "icon": "Cherry",
+  "root": true,
+  "pages": [
+    "---基础---",
+    "guide",
+    "install",
+    "start",
+    "sidebar",
+    "menus",
+    "---页面---",
+    "favPage",
+    "guestbook",
+    "---使用打赏送礼品功能---",
+    "enable",
+    "pay"
+  ]
+}
+
+

@@ -1,21 +1,21 @@
-import { NextResponse } from 'next/server';
-import { type DocumentRecord } from 'fumadocs-core/search/algolia';
-import { source } from '@/lib/source';
+import { source } from '@/lib/source'
+import { type DocumentRecord } from 'fumadocs-core/search/algolia'
+import { NextResponse } from 'next/server'
 
-export const revalidate = false;
+export const revalidate = false
 
 export function GET() {
-  const results: DocumentRecord[] = [];
+  const results: DocumentRecord[] = []
 
   for (const page of source.getPages()) {
     results.push({
       _id: page.url,
-      structured: page.data.structuredData,
+      structured: { headings: [], contents: [] },
       url: page.url,
       title: page.data.title,
       description: page.data.description,
-    });
+    })
   }
 
-  return NextResponse.json(results);
+  return NextResponse.json(results)
 }

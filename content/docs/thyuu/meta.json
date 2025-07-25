@@ -1,0 +1,20 @@
+{
+  "title": "THYUU/星度",
+  "description": "THYUU/星度主题使用文档",
+  "icon": "PartyPopper",
+  "root": true,
+  "pages": [
+    "---基础---",
+    "guide",
+    "prepare",
+    "start",
+    "homePage",
+    "menus",
+    "rss",
+    "---自定义页面---",
+    "create",
+    "douban"
+  ]
+}
+
+

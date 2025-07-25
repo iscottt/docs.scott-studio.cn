@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="inline-flex items-center gap-3 max-md:mx-auto">
           <a
             className="inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring disabled:pointer-events-none disabled:opacity-50  text-black dark:text-white shadow-fd-background/20 bg-black hover:bg-gray-800 dark:bg-blue-500 dark:hover:bg-blue-400 h-11 px-6 rounded-full"
-            href="/docs/somnia/01-guide">
+            href="/docs/somnia/guide">
             查看文档
           </a>
           <a

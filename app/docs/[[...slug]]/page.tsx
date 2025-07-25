@@ -27,16 +27,7 @@ import {
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import * as path from 'node:path'
-import { type ComponentProps, type FC, type ReactElement, type ReactNode } from 'react'
-
-function PreviewRenderer({ preview }: { preview: string }): ReactNode {
-  if (preview && preview in Preview) {
-    const Comp = Preview[preview as keyof typeof Preview]
-    return <Comp />
-  }
-
-  return null
-}
+import { type ComponentProps, type FC, type ReactElement } from 'react'
 
 const generator = createGenerator()
 
@@ -99,7 +90,6 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
               },
             })}
           />
-          {page.data.index ? <DocsCategory url={page.url} /> : null}
         </div>
         {lastModified && <PageLastUpdate date={lastModified} />}
         <PageFooter />
