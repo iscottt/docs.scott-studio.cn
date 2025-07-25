@@ -1,5 +1,6 @@
 import { Card, Cards } from 'fumadocs-ui/components/card'
 import { ActivityIcon, BookOpenIcon, PaletteIcon, PartyPopperIcon, SignatureIcon, SparkleIcon } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = {
   title: '木木笔记',
@@ -13,18 +14,18 @@ export default function HomePage() {
         <h1 className="mb-8 max-w-[600px] text-4xl font-medium max-md:hidden">三禾木木的文档站</h1>
         <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">包含主题的使用文档，以及一些其他的内容。</p>
         <div className="inline-flex items-center gap-3 max-md:mx-auto">
-          <a
+          <Link
             className="inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring disabled:pointer-events-none disabled:opacity-50  text-black dark:text-white shadow-fd-background/20 bg-black hover:bg-gray-800 dark:bg-blue-500 dark:hover:bg-blue-400 h-11 px-6 rounded-full"
             href="/docs/somnia/guide">
             查看文档
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://blog.scott-studio.cn"
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center justify-center text-sm font-medium ring-offset-fd-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fd-ring disabled:pointer-events-none disabled:opacity-50 border hover:bg-fd-accent hover:text-fd-accent-foreground h-11 px-6 rounded-full bg-fd-background">
             我的博客
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-8">

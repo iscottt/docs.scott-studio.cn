@@ -4,11 +4,12 @@ const withMDX = createMDX()
 
 /** @type {import('next').NextConfig} */
 const config = {
-  // output: 'export',
+  output: 'export',
   eslint: {
     // Replaced by root workspace command
     ignoreDuringBuilds: true,
   },
+  skipTrailingSlashRedirect: true,
   images: { unoptimized: true },
   serverExternalPackages: ['ts-morph', 'typescript'],
 }
