@@ -65,6 +65,11 @@
 body {
   overscroll-behavior-y: none;
   background-color: var(--color-fd-background);
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .dark {
