@@ -9,7 +9,7 @@ const config = {
     // Replaced by root workspace command
     ignoreDuringBuilds: true,
   },
-  skipTrailingSlashRedirect: true,
+  trailingSlash: true,
   images: { unoptimized: true },
   serverExternalPackages: ['ts-morph', 'typescript'],
 }
