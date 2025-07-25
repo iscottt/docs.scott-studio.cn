@@ -93,7 +93,7 @@ function Footer() {
       <footer className="mt-auto border-t bg-fd-card py-12 text-fd-secondary-foreground">
         <div className="container flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="mb-1 text-sm font-semibold">Copyright © 2022-2025 张洪Heo 保留所有权利。</p>
+            <p className="mb-1 text-sm ">Copyright © 2022-2025 SCOTT Studio 保留所有权利。</p>
             <p className="text-xs">京ICP备19051325号-2</p>
           </div>
         </div>

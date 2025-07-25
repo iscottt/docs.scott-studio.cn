@@ -22,8 +22,8 @@ export default function HomePage() {
                 background:
                   'repeating-linear-gradient(65deg, var(--color-purple-300), var(--color-purple-300) 12px, color-mix(in oklab, var(--color-blue-600) 30%, transparent) 20px, transparent 200px)',
               }}></div>
-            <h1 className="mb-8 text-4xl font-medium md:hidden">木木笔记</h1>
-            <h1 className="mb-8 max-w-[600px] text-4xl font-medium max-md:hidden">木木笔记</h1>
+            <h1 className="mb-8 text-4xl font-medium md:hidden">三禾木木的文档站</h1>
+            <h1 className="mb-8 max-w-[600px] text-4xl font-medium max-md:hidden">三禾木木的文档站</h1>
             <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">不止有 NVPress/Halo 主题的使用文档，还有我从零开始的学习记录</p>
             <div className="inline-flex items-center gap-3 max-md:mx-auto">
               <a

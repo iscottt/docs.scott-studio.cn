@@ -10,28 +10,34 @@ importers:
     dependencies:
       '@fumadocs/mdx-remote':
         specifier: ^1.4.0
-        version: 1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        version: 1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-hover-card':
         specifier: ^1.1.14
         version: 1.1.14(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-tooltip':
+        specifier: ^1.2.7
+        version: 1.2.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tailwindcss/postcss':
         specifier: ^4.1.11
         version: 4.1.11
+      algoliasearch:
+        specifier: ^5.34.1
+        version: 5.34.1
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
       fumadocs-core:
         specifier: 15.6.3
-        version: 15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       fumadocs-mdx:
         specifier: 11.6.11
-        version: 11.6.11(@fumadocs/mdx-remote@1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.15.0)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+        version: 11.6.11(@fumadocs/mdx-remote@1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       fumadocs-typescript:
         specifier: ^4.0.6
         version: 4.0.6(@types/react@19.1.8)(typescript@5.8.3)
       fumadocs-ui:
         specifier: 15.6.3
-        version: 15.6.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@4.1.11)
+        version: 15.6.3(@oramacloud/client@2.1.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@4.1.11)
       lucide-react:
         specifier: ^0.525.0
         version: 0.525.0(react@19.1.0)
@@ -59,6 +65,9 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.1.11)
+      ts-morph:
+        specifier: ^26.0.0
+        version: 26.0.0
       zod:
         specifier: ^4.0.8
         version: 4.0.8
@@ -80,6 +89,58 @@ importers:
         version: 5.8.3
 
 packages:
+
+  '@algolia/client-abtesting@5.34.1':
+    resolution: {integrity: sha512-M4zb6J7q+pg9V9Xk0k1WDgvupfCtXcxjKGTrNVYemiredLVGOmvVIPAUjg2rx4QmK7DWNApWLsieYwk7PAaOXw==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/client-analytics@5.34.1':
+    resolution: {integrity: sha512-h18zlL+bVUlbNE92olo1d/r6HQPkxhmP7yCpA1osERwpgC6F058kWm0O0aYdrHJIHtWBcs9aRqq7IkQSkpjPJg==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/client-common@5.34.1':
+    resolution: {integrity: sha512-otPWALs72KvmVuP0CN0DI6sqVx1jQWKi+/DgAiP8DysVMgiNlva3GDKTtAK6XVGlT08f4h32FNuL0yQODuCfKA==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/client-insights@5.34.1':
+    resolution: {integrity: sha512-SNDb5wuEpQFM6S5Shk2iytLMusvGycm9uTuYh7cGa1h3U7O65OjjjIgQ0lLY5HPybHNtmXr4Zh/EZ23pZvAJHg==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/client-personalization@5.34.1':
+    resolution: {integrity: sha512-T8z9KqYJOup83Hw0mgICYWfJoLh//FNWbf4roFd95ZJzZ4v1cN/hvr7Eqml1qWMoCkJb4y/XQjrXsJ6Y9XnMLw==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/client-query-suggestions@5.34.1':
+    resolution: {integrity: sha512-YA0kC4CwO1mc1dliNgbFgToweRa7Uihjz3izEaV4cXninF1v4SaOrPkQUsiFPprAffjMzOUoT7vahQZ/HZyiKQ==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/client-search@5.34.1':
+    resolution: {integrity: sha512-bt5hC9vvjaKvdvsgzfXJ42Sl3qjQqoi/FD8V7HOQgtNFhwSauZOlgLwFoUiw67sM+r7ehF7QDk5WRDgY7fAkIg==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/ingestion@1.34.1':
+    resolution: {integrity: sha512-QLxiBskQxFGzPqKZvBNEvNN95kgDCbBd2X29ZGfh6Sr2QOSU34US6Z9x2duiF4o9FwsB0i6eQ2c9vHfuH0lAQg==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/monitoring@1.34.1':
+    resolution: {integrity: sha512-NteCvWcWXXdnPGyZH8rXHslcf2pM1WGDNMGNZFXLFtOt1Gf1Tjy2t0NZLp+Mxap3JMV4mbYmactbXrvpQf/lLA==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/recommend@5.34.1':
+    resolution: {integrity: sha512-UdgDSrunLIBAAAxQlYLXYLnYFN4wkzkrAYx+wMLEk/pzASWyza3BkecbUFVqoYOBIgwo7Mt4iymzVtFkzL2uCQ==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/requester-browser-xhr@5.34.1':
+    resolution: {integrity: sha512-567LfFTc9VOiPtuySQohoqaWMeohYWbXK71aMSin+SLMgeKX7hz5LrVmkmMQj9udwWK6/mtHEYZGPYHSuXpLQg==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/requester-fetch@5.34.1':
+    resolution: {integrity: sha512-YRbygPgGBEik5U593JvyjgxFjcsyZMR25eIQxNHvSQumdAzt5A4E4Idw3yXnwhrmMdjML54ZXT7EAjnTjWy8Xw==}
+    engines: {node: '>= 14.0.0'}
+
+  '@algolia/requester-node-http@5.34.1':
+    resolution: {integrity: sha512-o0mqRYbS82Rt4DE02Od7RL6pNtV7oSxScPuIw8LW4aqO2V5eCF05Pry/SnUgcI/Vb2QCYC66hytBCqzyC/toZA==}
+    engines: {node: '>= 14.0.0'}
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -477,6 +538,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@noble/hashes@1.8.0':
+    resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -489,9 +554,15 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
+  '@orama/cuid2@2.2.3':
+    resolution: {integrity: sha512-Lcak3chblMejdlSHgYU2lS2cdOhDpU6vkfIJH4m+YKvqQyLqs1bB8+w6NT1MG5bO12NUK2GFc34Mn2xshMIQ1g==}
+
   '@orama/orama@3.1.11':
     resolution: {integrity: sha512-Szki0cgFiXE5F9RLx2lUyEtJllnuCSQ4B8RLDwIjXkVit6qZjoDAxH+xhJs29MjKLDz0tbPLdKFa6QrQ/qoGGA==}
     engines: {node: '>= 20.0.0'}
+
+  '@oramacloud/client@2.1.4':
+    resolution: {integrity: sha512-uNPFs4wq/iOPbggCwTkVNbIr64Vfd7ZS/h+cricXVnzXWocjDTfJ3wLL4lr0qiSu41g8z+eCAGBqJ30RO2O4AA==}
 
   '@radix-ui/number@1.1.1':
     resolution: {integrity: sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g==}
@@ -774,6 +845,19 @@ packages:
       '@types/react-dom':
         optional: true
 
+  '@radix-ui/react-tooltip@1.2.7':
+    resolution: {integrity: sha512-Ap+fNYwKTYJ9pzqW+Xe2HtMRbQ/EeWkj2qykZ6SuEV4iS/o1bZI5ssJbk4D2r8XuDuOBVz/tIx2JObtuqU+5Zw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
   '@radix-ui/react-use-callback-ref@1.1.1':
     resolution: {integrity: sha512-FkBMwD+qbGQeMu1cOHnuGB6x4yzPjho8ap5WtbEJ26umhgqVXbhekKUQO+hZEL1vU92a3wHwdp0HAcqAUF5iDg==}
     peerDependencies:
@@ -1036,6 +1120,10 @@ packages:
     resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+
+  algoliasearch@5.34.1:
+    resolution: {integrity: sha512-s70HlfBgswgEdmCYkUJG8i/ULYhbkk8N9+N8JsWUwszcp7eauPEr5tIX4BY0qDGeKWQ/qZvmt4mxwTusYY23sg==}
+    engines: {node: '>= 14.0.0'}
 
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -1453,6 +1541,9 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+
+  lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -2013,6 +2104,83 @@ packages:
 
 snapshots:
 
+  '@algolia/client-abtesting@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/client-analytics@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/client-common@5.34.1': {}
+
+  '@algolia/client-insights@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/client-personalization@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/client-query-suggestions@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/client-search@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/ingestion@1.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/monitoring@1.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/recommend@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
+  '@algolia/requester-browser-xhr@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+
+  '@algolia/requester-fetch@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+
+  '@algolia/requester-node-http@5.34.1':
+    dependencies:
+      '@algolia/client-common': 5.34.1
+
   '@alloc/quick-lru@5.2.0': {}
 
   '@ampproject/remapping@2.3.0':
@@ -2124,10 +2292,10 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@fumadocs/mdx-remote@1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
+  '@fumadocs/mdx-remote@1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@mdx-js/mdx': 3.1.0(acorn@8.15.0)
-      fumadocs-core: 15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      fumadocs-core: 15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       gray-matter: 4.0.3
       react: 19.1.0
       zod: 4.0.8
@@ -2303,6 +2471,9 @@ snapshots:
   '@next/swc-win32-x64-msvc@15.4.1':
     optional: true
 
+  '@noble/hashes@1.8.0':
+    optional: true
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -2315,7 +2486,19 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
+  '@orama/cuid2@2.2.3':
+    dependencies:
+      '@noble/hashes': 1.8.0
+    optional: true
+
   '@orama/orama@3.1.11': {}
+
+  '@oramacloud/client@2.1.4':
+    dependencies:
+      '@orama/cuid2': 2.2.3
+      '@orama/orama': 3.1.11
+      lodash: 4.17.21
+    optional: true
 
   '@radix-ui/number@1.1.1': {}
 
@@ -2618,6 +2801,26 @@ snapshots:
       '@types/react': 19.1.8
       '@types/react-dom': 19.1.6(@types/react@19.1.8)
 
+  '@radix-ui/react-tooltip@1.2.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@radix-ui/primitive': 1.1.2
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-context': 1.1.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-dismissable-layer': 1.1.10(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-id': 1.1.1(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-popper': 1.2.7(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-portal': 1.1.9(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-presence': 1.1.4(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-primitive': 2.1.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-slot': 1.2.3(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.1.8)(react@19.1.0)
+      '@radix-ui/react-visually-hidden': 1.2.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+    optionalDependencies:
+      '@types/react': 19.1.8
+      '@types/react-dom': 19.1.6(@types/react@19.1.8)
+
   '@radix-ui/react-use-callback-ref@1.1.1(@types/react@19.1.8)(react@19.1.0)':
     dependencies:
       react: 19.1.0
@@ -2860,6 +3063,22 @@ snapshots:
 
   acorn@8.15.0: {}
 
+  algoliasearch@5.34.1:
+    dependencies:
+      '@algolia/client-abtesting': 5.34.1
+      '@algolia/client-analytics': 5.34.1
+      '@algolia/client-common': 5.34.1
+      '@algolia/client-insights': 5.34.1
+      '@algolia/client-personalization': 5.34.1
+      '@algolia/client-query-suggestions': 5.34.1
+      '@algolia/client-search': 5.34.1
+      '@algolia/ingestion': 1.34.1
+      '@algolia/monitoring': 1.34.1
+      '@algolia/recommend': 5.34.1
+      '@algolia/requester-browser-xhr': 5.34.1
+      '@algolia/requester-fetch': 5.34.1
+      '@algolia/requester-node-http': 5.34.1
+
   argparse@1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -3069,7 +3288,7 @@ snapshots:
     dependencies:
       to-regex-range: 5.0.1
 
-  fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@formatjs/intl-localematcher': 0.6.1
       '@orama/orama': 3.1.11
@@ -3089,21 +3308,23 @@ snapshots:
       shiki: 3.8.1
       unist-util-visit: 5.0.0
     optionalDependencies:
+      '@oramacloud/client': 2.1.4
       '@types/react': 19.1.8
+      algoliasearch: 5.34.1
       next: 15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
     transitivePeerDependencies:
       - supports-color
 
-  fumadocs-mdx@11.6.11(@fumadocs/mdx-remote@1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.15.0)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)):
+  fumadocs-mdx@11.6.11(@fumadocs/mdx-remote@1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0))(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)):
     dependencies:
       '@mdx-js/mdx': 3.1.0(acorn@8.15.0)
       '@standard-schema/spec': 1.0.0
       chokidar: 4.0.3
       esbuild: 0.25.8
       estree-util-value-to-estree: 3.4.0
-      fumadocs-core: 15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      fumadocs-core: 15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       js-yaml: 4.1.0
       lru-cache: 11.1.0
       picocolors: 1.1.1
@@ -3112,7 +3333,7 @@ snapshots:
       unist-util-visit: 5.0.0
       zod: 4.0.8
     optionalDependencies:
-      '@fumadocs/mdx-remote': 1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      '@fumadocs/mdx-remote': 1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       next: 15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     transitivePeerDependencies:
       - acorn
@@ -3135,7 +3356,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  fumadocs-ui@15.6.3(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@4.1.11):
+  fumadocs-ui@15.6.3(@oramacloud/client@2.1.4)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@4.1.11):
     dependencies:
       '@radix-ui/react-accordion': 1.2.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-collapsible': 1.1.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -3148,7 +3369,7 @@ snapshots:
       '@radix-ui/react-slot': 1.2.3(@types/react@19.1.8)(react@19.1.0)
       '@radix-ui/react-tabs': 1.1.12(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       class-variance-authority: 0.7.1
-      fumadocs-core: 15.6.3(@types/react@19.1.8)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      fumadocs-core: 15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       lodash.merge: 4.6.2
       next-themes: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       postcss-selector-parser: 7.1.0
@@ -3338,6 +3559,9 @@ snapshots:
       lightningcss-win32-x64-msvc: 1.30.1
 
   lodash.merge@4.6.2: {}
+
+  lodash@4.17.21:
+    optional: true
 
   longest-streak@3.1.0: {}
 
