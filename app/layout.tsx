@@ -25,7 +25,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${geist.variable} ${mono.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo.svg" sizes="any" />
+        <link rel="icon" href="/logo.png" sizes="any" />
         <meta name="algolia-site-verification" content="D082A3958E07F7DA" />
       </head>
       <Body>
