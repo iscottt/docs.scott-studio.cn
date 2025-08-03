@@ -14,10 +14,26 @@ export const docs = defineDocs({
     }),
   },
 })
+export const { docs: docsChangelog, meta: metaChangelog } = defineDocs({
+  dir: 'changelog/content',
+  docs: {
+    schema: frontmatterSchema.extend({
+      date: z.string(),
+      tags: z.array(z.string()).optional(),
+      version: z.string().optional(),
+    }),
+  },
+  meta: {
+    schema: metaSchema.extend({
+      description: z.string().optional(),
+    }),
+  },
+})
 
 export default defineConfig({
   lastModifiedTime: 'git',
   mdxOptions: {
+    providerImportSource: "@/mdx-components",
     rehypeCodeOptions: {
       lazy: true,
       experimentalJSEngine: true,

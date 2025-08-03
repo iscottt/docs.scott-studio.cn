@@ -11,6 +11,9 @@ importers:
       '@fumadocs/mdx-remote':
         specifier: ^1.4.0
         version: 1.4.0(@types/react@19.1.8)(acorn@8.15.0)(fumadocs-core@15.6.3(@oramacloud/client@2.1.4)(@types/react@19.1.8)(algoliasearch@5.34.1)(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      '@radix-ui/react-accordion':
+        specifier: ^1.2.11
+        version: 1.2.11(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-hover-card':
         specifier: ^1.1.14
         version: 1.1.14(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
