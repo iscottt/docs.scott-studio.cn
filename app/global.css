@@ -118,3 +118,7 @@ html {
     transform: translateX(212px);
   }
 }
+
+.prose-p\:text-balance :where(p):not(:where([class~="not-prose"], [class~="not-prose"] *)){
+  text-wrap: auto;
+}

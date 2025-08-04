@@ -32,7 +32,7 @@ export const baseOptions: BaseLayoutProps = {
 }
 export const linkItems: LinkItemType[] = [
   {
-    text: '更新日志',
+    text: 'Somnia更新日志',
     url: '/changelog',
   },
 ]

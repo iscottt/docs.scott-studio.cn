@@ -14,7 +14,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     ...TabsComponents,
     ...Steps,
     ...Callouts,
-    img: props => <ImageZoom {...(props as any)} style={{ width: '100%' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />,
+    img: props => <ImageZoom {...(props as any)} className='rounded-lg border shadow-md' style={{ width: '100%' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />,
     Accordion,
     AccordionItem,
     AccordionTrigger,

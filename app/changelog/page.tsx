@@ -51,7 +51,7 @@ export default function HomePage() {
                       <time className="text-sm font-medium text-muted-foreground block mb-3">{formattedDate}</time>
 
                       {changelog.data.version && (
-                        <div className="inline-flex relative z-10 items-center justify-center w-10 h-10 text-foreground border border-border rounded-lg text-sm font-bold">
+                        <div className="w-fit py-0.5 px-2 text-xs font-medium bg-yellow-500/20 text-yellow-500 rounded-full border border-yellow-500/20 flex items-center justify-center">
                           v{changelog.data.version}
                         </div>
                       )}
