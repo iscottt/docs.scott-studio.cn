@@ -39,7 +39,7 @@ export default function HomePage() {
       <div className="max-w-5xl mx-auto px-6 lg:px-10 pt-10">
         <div className="relative">
           {sortedChangelogs.map(changelog => {
-            const MDX = changelog.data.body
+            const MDX = changelog.data.body as any
             const date = new Date(changelog.data.date)
             const formattedDate = formatDate(date)
 

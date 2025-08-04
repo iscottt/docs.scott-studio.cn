@@ -1,11 +1,8 @@
-import { rehypeCodeDefaultOptions, remarkSteps } from 'fumadocs-core/mdx-plugins'
+import { remarkSteps } from 'fumadocs-core/mdx-plugins'
 import { defineConfig, defineDocs, frontmatterSchema, metaSchema } from 'fumadocs-mdx/config'
 import { remarkAutoTypeTable } from 'fumadocs-typescript'
-import { transformerTwoslash } from 'fumadocs-twoslash';
-import { createFileSystemTypesCache } from 'fumadocs-twoslash/cache-fs';
 import { z } from 'zod'
 
-import { ElementContent } from 'hast'
 
 export const docs = defineDocs({
   docs: {
@@ -45,29 +42,6 @@ export default defineConfig({
         light: 'catppuccin-latte',
         dark: 'catppuccin-mocha',
       },
-      transformers: [
-        ...(rehypeCodeDefaultOptions.transformers ?? []),
-        transformerTwoslash({
-          typesCache: createFileSystemTypesCache(),
-        }),
-        {
-          name: '@shikijs/transformers:remove-notation-escape',
-          code(hast) {
-            function replace(node: ElementContent): void {
-              if (node.type === 'text') {
-                node.value = node.value.replace('[\\!code', '[!code')
-              } else if ('children' in node) {
-                for (const child of node.children) {
-                  replace(child)
-                }
-              }
-            }
-
-            replace(hast)
-            return hast
-          },
-        },
-      ],
     },
     remarkCodeTabOptions: {
       parseMdx: true,
