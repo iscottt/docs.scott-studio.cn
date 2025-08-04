@@ -52,7 +52,7 @@ export default function HomePage() {
 
                       {changelog.data.version && (
                         <div className="inline-flex relative z-10 items-center justify-center w-10 h-10 text-foreground border border-border rounded-lg text-sm font-bold">
-                          {changelog.data.version}
+                          v{changelog.data.version}
                         </div>
                       )}
                     </div>
