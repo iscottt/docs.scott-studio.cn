@@ -1,5 +1,6 @@
 import { docsChangelog, metaChangelog } from '@/.source'
 import { formatDate } from '@/lib/utils'
+import { getMDXComponents } from '@/mdx-components'
 import { loader } from 'fumadocs-core/source'
 import { createMDXSource } from 'fumadocs-mdx'
 import { useMemo } from 'react'
@@ -22,7 +23,7 @@ interface ChangelogPage {
   data: ChangelogData
 }
 
-export default function Page() {
+export default function HomePage() {
   const sortedChangelogs = useMemo(() => {
     const allPages = source.getPages() as ChangelogPage[]
     return allPages.sort((a, b) => {
@@ -31,6 +32,7 @@ export default function Page() {
       return dateB - dateA
     })
   }, [])
+
   return (
     <div className="min-h-screen bg-background relative">
       {/* Timeline */}
@@ -80,7 +82,7 @@ export default function Page() {
                         )}
                       </div>
                       <div className="prose dark:prose-invert max-w-none prose-headings:scroll-mt-8 prose-headings:font-semibold prose-a:no-underline prose-headings:tracking-tight prose-headings:text-balance prose-p:tracking-tight prose-p:text-balance">
-                        <MDX />
+                        <MDX components={getMDXComponents({})} />
                       </div>
                     </div>
                   </div>

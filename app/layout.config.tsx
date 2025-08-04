@@ -1,4 +1,4 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared'
+import type { BaseLayoutProps, LinkItemType } from 'fumadocs-ui/layouts/shared'
 
 /**
  * Shared layout configurations
@@ -30,3 +30,9 @@ export const baseOptions: BaseLayoutProps = {
     transparentMode: 'top',
   },
 }
+export const linkItems: LinkItemType[] = [
+  {
+    text: '更新日志',
+    url: '/changelog',
+  },
+]
