@@ -1,0 +1,76 @@
+---
+title: 文章语法
+description: vapor主题相关的文章语法
+---
+
+<Callout title="推荐插件">
+  推荐安装 [Markdown/HTML内容块](https://www.halo.run/store/apps/app-NgHnY) 插件，可使用一些特殊的语法。
+</Callout>
+
+## 语法示例
+
+<Callout title="提示">
+  根据 class 里的 columns-1 is-cropped 来改变样式，**columns-default**，**columns-1**，**columns-4 is-cropped**
+</Callout>
+<Tabs items={['单图', '轮播图']}>
+  <Tab value="单图">
+		```html title="example"
+  <figure class="wp-block-image fade-before">
+          <img fetchpriority="high" decoding="async" width="3680" height="2047"
+            src="https://api.minio.yyds.pink/moony/files/2024/08/123161646.webp" alt="" class="wp-image-1"
+            data-fancybox="gallery">
+          <figcaption class="wp-element-caption">全局菜单 UI 设计图</figcaption>
+  </figure>
+		```
+    #### 预览
+    ![单图](https://api.minio.yyds.pink/moony/files/2024/12/Snipaste_2024-12-03_22-17-24.webp)
+	</Tab>
+  <Tab value="轮播图">
+    ```html title="example"
+    <figure class="wp-block-gallery has-nested-images columns-1 is-cropped">
+      <figure class="wp-block-image size-large">
+          <img src="https://api.minio.yyds.pink/moony/webp/2024/05/6634b3eb4bf78.webp" class="wp-image-1">
+          <figcaption class="wp-element-caption">日间模式</figcaption>
+      </figure>
+      <figure class="wp-block-image size-large">
+          <img src="https://api.minio.yyds.pink/moony/webp/2024/05/6634b3eb42510.webp" class="wp-image-2">
+          <figcaption class="wp-element-caption">夜间模式</figcaption>
+      </figure>
+      <figcaption class="blocks-gallery-caption wp-element-caption">THYUU/星度首页夏季限定主题</figcaption>
+    </figure>
+    ```
+    #### 预览
+    ![样式1](https://api.minio.yyds.pink/moony/files/2024/12/Snipaste_2024-12-03_22-10-00.webp)
+  </Tab>
+</Tabs>
+
+## 图片描述
+
+插入一张图片时，给图片设置alt属性，会以特殊的样式展示。
+
+<Tabs items={['插入示例', '具体效果']}>
+  <Tab value="插入示例">
+    ![插入示例](/imgs/1754826734573.webp)
+	</Tab>
+  <Tab value="具体效果">
+    ![具体效果](/imgs/1754826743089.webp)
+  </Tab>
+</Tabs>
+
+## 超链接优化
+
+主题为文章内的超链接进行了一些优化，将会自动获取链接站点的favicon进行渲染
+
+<Tabs items={['源代码', '具体效果']}>
+  <Tab value="源代码">
+    ```html title="example"
+    我是 <a rel="noopener noreferrer" target="_blank" 
+    href="https://blog.scott-studio.cn/">三禾木木</a>，
+    不知名前端攻城狮，分享编程经验和技术干货。
+    ```
+	</Tab>
+  <Tab value="具体效果">
+    ![超链接优化](/imgs/1754827430952.webp)
+  </Tab>
+</Tabs>
+
